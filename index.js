@@ -7,16 +7,16 @@ module.exports = function(homebridge) {
   Characteristic = homebridge.hap.Characteristic;
   UUIDGen = homebridge.hap.uuid;
 
-  homebridge.registerAccessory('homebridge-raspberrypi-temperature', 'RaspberryPiTemperature', RaspberryPiTemperature);
+  homebridge.registerAccessory('homebridge-orangepi-temperature', 'OrangePiTemperature', OrangePiTemperature);
 }
 
-function RaspberryPiTemperature(log, config) {
+function OrangePiTemperature(log, config) {
   this.log = log;
   this.name = config["name"];
   
 }
 
-RaspberryPiTemperature.prototype = {
+OrangePiTemperature.prototype = {
   identify: function(callback) {
     callback();
   },
@@ -26,9 +26,9 @@ RaspberryPiTemperature.prototype = {
 
     var infoService = new Service.AccessoryInformation();
     infoService
-      .setCharacteristic(Characteristic.Manufacturer, "RaspberryPi")
-      .setCharacteristic(Characteristic.Model, "3B")
-      .setCharacteristic(Characteristic.SerialNumber, "Undefined");
+      .setCharacteristic(Characteristic.Manufacturer, "OrangePi")
+      .setCharacteristic(Characteristic.Model, "Zero")
+      .setCharacteristic(Characteristic.SerialNumber, "Orange");
     services.push(infoService);
 
     var raspberrypiService = new Service.TemperatureSensor(this.name);
@@ -42,11 +42,10 @@ RaspberryPiTemperature.prototype = {
   
   getTemperature: function(callback) {
     var data = rf.readFileSync("/sys/class/thermal/thermal_zone0/temp","utf-8");
-    var temperature = parseFloat(data)/1000;
+    var temperature = parseFloat(data);
     this.log.debug("temperature: " + temperature);
     
     callback(null, temperature);
   }
 
 }
-
