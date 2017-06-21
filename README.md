@@ -1,10 +1,10 @@
-# homebridge-raspberrypi-temperature
-a homebridge plugin that gets raspberry pi CPU temperatures.
+# homebridge-orangepi-temperature
+a homebridge plugin that gets orange pi CPU temperatures.
 
 # Configuration
     "accessories": [
         {
-          "accessory": "RaspberryPiTemperature",
-          "name": "RaspberryPiTemperature"
+          "accessory": "OrangePiTemperature",
+          "name": "OrangePiTemperature"
         }
      ],
