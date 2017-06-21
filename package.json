@@ -1,17 +1,17 @@
 {
-  "name": "homebridge-orangepi-temperature",
+  "name": "homebridge-pi-temperature",
   "version": "0.0.1", 
-  "description": "OrangePi Temperature plugins for HomeBridge(https://github.com/a900927/homebridge-orangepi-temperature).",
+  "description": "OrangePi Temperature plugins for HomeBridge(https://github.com/a900927/homebridge-pi-temperature).",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/a900927/homebridge-orangepi-temperature"
+    "url": "https://github.com/a900927/homebridge-pi-temperature"
   },
   "bugs": {
-    "url": "https://github.com/a900927/homebridge-orangepi-temperature"
+    "url": "https://github.com/a900927/homebridge-pi-temperature"
   },
   "engines": {
     "node": ">=0.12.0",
