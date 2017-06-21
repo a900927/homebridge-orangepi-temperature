@@ -1,17 +1,17 @@
 {
   "name": "homebridge-orangepi-temperature",
   "version": "0.0.1", 
-  "description": "OrangePi Temperature plugins for HomeBridge(https://github.com/YinHangCode/homebridge-raspberrypi-temperature).",
+  "description": "OrangePi Temperature plugins for HomeBridge(https://github.com/a900927/homebridge-orangepi-temperature).",
   "license": "ISC",
   "keywords": [
     "homebridge-plugin"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/YinHangCode/homebridge-raspberrypi-temperature"
+    "url": "https://github.com/a900927/homebridge-orangepi-temperature"
   },
   "bugs": {
-    "url": "https://github.com/YinHangCode/homebridge-raspberrypi-temperature/issues"
+    "url": "https://github.com/a900927/homebridge-orangepi-temperature"
   },
   "engines": {
     "node": ">=0.12.0",
