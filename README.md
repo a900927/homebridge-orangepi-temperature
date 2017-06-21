@@ -4,7 +4,9 @@ a homebridge plugin that gets orange pi CPU temperatures.
 # Configuration
     "accessories": [
         {
-          "accessory": "OrangePiTemperature",
-          "name": "OrangePiTemperature"
+          "accessory": "PiTemperature",
+          "name": "Pi"
+          "piModel": "Orangepi",
+          "unit": "1"
         }
      ],
